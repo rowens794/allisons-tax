@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import clientInfo from '../../data/clientInfo'
 import Heading from '../../page-sections/heading-sections/simple-centered'
-import Contact from '../../page-sections/contact/split-two-tone'
+import Book from '../../page-sections/book-time/calendly'
 
 const Index: NextPage = () => {
   return (
@@ -17,10 +17,18 @@ const Index: NextPage = () => {
       <main className="relative">
         <Heading
           heading=""
-          boldText="Let's Talk Taxes."
-          bodyText="Feel Free to give us a call or leave us a message in the form below. It goes directly to our inbox."
+          boldText="Let's Get You in the Calendar"
+          bodyText="You can book an appointment directly on this page or give us a call to book your appointment."
         />
-        <Contact />
+
+        <div
+          className="relative z-30 w-full mt-36 lg:mt-6"
+          style={{ height: '600px' }}
+        >
+          <div className="absolute w-full overflow-hidden -top-48">
+            <Book urlString="https://calendly.com/intellispect-1/60-minute-meeting" />
+          </div>
+        </div>
       </main>
     </div>
   )

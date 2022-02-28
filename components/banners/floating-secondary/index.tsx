@@ -11,7 +11,7 @@ export default function index({}: Props) {
   return (
     <div className="relative z-20 hidden pb-2 sm:pb-5 lg:block">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <Link href="/contact">
+        <Link href="/book-appointment">
           <a>
             <div className="p-1 rounded-lg shadow-lg bg-secondary-600 hover:bg-secondary-700">
               <div className="flex flex-wrap items-center justify-between">

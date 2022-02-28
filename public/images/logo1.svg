@@ -12,7 +12,7 @@
   <defs
      id="defs2" />
   <rect
-     style="fill:#0891b2;fill-opacity:0.69999999;stroke-width:0.225693"
+     style="fill:#0891b2;fill-opacity:0.69999999;strokeWidth:0.225693"
      id="rect1006"
      width="72.550056"
      height="72.550056"
@@ -20,7 +20,7 @@
      y="63.708817"
      transform="matrix(0.55931958,-0.82895211,0.55931958,0.82895211,0,0)" />
   <rect
-     style="fill:#0891b2;fill-opacity:0.69999999;stroke-width:0.225693"
+     style="fill:#0891b2;fill-opacity:0.69999999;strokeWidth:0.225693"
      id="rect2368"
      width="72.550056"
      height="72.550056"
@@ -28,7 +28,7 @@
      y="17.078379"
      transform="matrix(0.13347032,-0.99105281,0.86904055,0.49474087,0,0)" />
   <rect
-     style="fill:#0891b2;fill-opacity:0.69999999;stroke-width:0.225693"
+     style="fill:#0891b2;fill-opacity:0.69999999;strokeWidth:0.225693"
      id="rect2370"
      width="72.550056"
      height="72.550056"

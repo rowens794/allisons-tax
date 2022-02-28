@@ -1,29 +1,48 @@
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+import {
+  MailIcon,
+  PhoneIcon,
+  HomeIcon,
+  ClockIcon,
+} from '@heroicons/react/outline'
 import clientInfo from '../../../data/clientInfo'
 
 export default function Index() {
   return (
     <div className="relative bg-white">
       <div className="absolute inset-0">
-        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-white" />
       </div>
       <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
-        <div className="px-4 py-16 bg-gray-50 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+        <div className="px-4 py-16 bg-white sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
               Get in touch
             </h2>
-            <p className="mt-3 text-lg leading-6 text-gray-500">
-              While you can always call or email me - this form goes directly
-              into my inbox. Feel free to drop me a note, and I promise to get
-              back to you within 30 minutes.
-            </p>
             <dl className="mt-8 text-base text-gray-500">
-              <div>
+              <div className="mt-6">
                 <dt className="sr-only">Address</dt>
-                <dd>
-                  <p>{clientInfo.street}</p>
-                  <p>{clientInfo.cityState}</p>
+                <dd className="flex">
+                  <HomeIcon
+                    className="flex-shrink-0 w-6 h-6 mr-3 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <div>
+                    <p>{clientInfo.street}</p>
+                    <p>{clientInfo.cityState}</p>
+                  </div>
+                </dd>
+              </div>
+              <div className="mt-6">
+                <dt className="sr-only">Hours</dt>
+                <dd className="flex">
+                  <ClockIcon
+                    className="flex-shrink-0 w-6 h-6 mr-3 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <div>
+                    <p>Monday - Friday</p>
+                    <p>9:00am - 5:00pm</p>
+                  </div>
                 </dd>
               </div>
               <div className="mt-6">
@@ -36,7 +55,7 @@ export default function Index() {
                   <span className="ml-3">{clientInfo.phone}</span>
                 </dd>
               </div>
-              <div className="mt-3">
+              <div className="mt-6">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <MailIcon
@@ -50,6 +69,9 @@ export default function Index() {
           </div>
         </div>
         <div className="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+          <p className="py-4 text-lg text-gray-600">
+            Send a message directly to my inbox.
+          </p>
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form
               name="ContactPage"

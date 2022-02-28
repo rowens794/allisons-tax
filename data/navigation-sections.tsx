@@ -2,7 +2,6 @@ import {
   PhoneIcon,
   BriefcaseIcon,
   IdentificationIcon,
-  NewspaperIcon,
   HomeIcon,
 } from '@heroicons/react/outline'
 
@@ -14,26 +13,20 @@ const pageNav = [
     icon: HomeIcon,
   },
   {
-    title: 'About',
-    href: '/about',
+    title: 'Prices',
+    href: '/#prices',
     type: 'link',
     icon: IdentificationIcon,
   },
   {
-    title: 'Our Service',
-    href: '/services',
+    title: 'Contact Us',
+    href: '/contact',
     type: 'link',
     icon: BriefcaseIcon,
   },
   {
-    title: 'Portfolio',
-    href: '/#portfolio',
-    type: 'link',
-    icon: NewspaperIcon,
-  },
-  {
-    title: 'Contact Us',
-    href: '/contact',
+    title: 'Book Appointment',
+    href: '/book-appointment',
     type: 'CTA',
     icon: PhoneIcon,
   },
